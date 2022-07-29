@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Técnicas de simulación</title>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{url_for('static', filename='image/bannerPrincipal.jpg')}}" class="d-block w-100" alt="..."
+                width="100%" height="650px">
+        </div>
+    </div>
+</div>
+
+<main role="main">
+
+
+
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+        <img class="card-img-top" src="../static/image/estadistica.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Sistemas</h5>
+                <p class="card-text">Un sistema es un conjunto de componentes interrelacionados que poseen un límite y funcionan como una unidad. Es cualquier conjunto de materiales y procesos que se comunican para realizar una serie de funciones, o un conjunto de procesos interconectados caracterizado por muchas
+                vías recíprocas de causa y efecto.</p>
+                <!-- <a href="#" class="btn btn-primary">SABER MÁS</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+        <img class="card-img-top" src="../static/image/modelos.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Modelos</h5>
+                <p class="card-text">Un modelo es una abstracción de la realidad. Es una descripción formal de los elementos más esenciales de un problema.
+                Debido a que estos elementos son exactamente los mismos que hemos definido como parte de nuestro sistema de interés, podemos considerar un modelo como una
+                descripción formal del sistema de interés.</p>
+                <!-- <a href="#" class="btn btn-primary">SABER MÁS</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img-top" src="../static/image/simulacion.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Simulación</h5>
+                <p class="card-text">Simular consiste más precisamente enperturbar o estimular un modelo para que, de
+                    acuerdo con su estructura orgánica interna, refleje las caracteristicas y efectos correspondientes que
+                    se articulan con los estímulos recibidos, según la interpretación consignada en el modelo.</p>
+                <!-- <a href="#" class="btn btn-primary">SABER MÁS</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</main>
+{% endblock %}
